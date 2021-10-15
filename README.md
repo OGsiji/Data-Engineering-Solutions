@@ -12,12 +12,12 @@ Question 1:
 4) This solution needs to be automated hence the function must be modularized
 
 Question 2
-<br />1)I used kafka-python rather than the more logical confluent-kafka-python because confluent-kafka-python has a dependency on librdkafka, which is a C library. Creating a deployment package on MacosX and deploying on the Linux that Lambda uses got a bit complex with binaries, so I skipped for now.
-<br />2) Note the extra SSL configs. You may or may not need them - depending on the version of your SSL dependency. But I don't control what Lambda is running.
-<br />3)MongoDB is feeds the connector api for the experiment while the producer is the kafka cluster setup
-<br />3)All other info including metadata are ignored and data is in arrays
+1) I used kafka-python rather than the more logical confluent-kafka-python because confluent-kafka-python has a dependency on librdkafka, which is a C library. Creating a deployment package on MacosX and deploying on the Linux that Lambda uses got a bit complex with binaries, so I skipped for now.
+2) Note the extra SSL configs. You may or may not need them - depending on the version of your SSL dependency. But I don't control what Lambda is running.
+3) MongoDB is feeds the connector api for the experiment while the producer is the kafka cluster setup
+4) All other info including metadata are ignored and data is in arrays
 
 Question3
-<br />1)Assume the Table name is Event
-<br />2)We want to return the id of the inserted row
-<br />3)we are inserting value 1 into first row and value 2 into second row
+<br />1) Assume the Table name is Event
+<br />2) We want to return the id of the inserted row
+<br />3 We are inserting value 1 into first row and value 2 into second row
