@@ -18,6 +18,6 @@ Question 2
 4) All other info including metadata are ignored and data is in arrays
 
 Question3
-<br />1) Assume the Table name is Event
-<br />2) We want to return the id of the inserted row
-<br />3 We are inserting value 1 into first row and value 2 into second row
+1) Assume the Table name is Event
+2) We want to return the id of the inserted row
+3) We are inserting value 1 into first row and value 2 into second row
